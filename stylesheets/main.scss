@@ -1,0 +1,57 @@
+@import 'resets';
+@import 'nav';
+@import 'footer';
+
+/* GLOBAL STYLES */
+$fonts: Arial, sans-serif;
+$font-size: 1em;
+
+body {
+  font-family: $fonts;
+  font-size: $font-size;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.row {
+  width: 100%;
+}
+
+.tile {
+  display: inline-block;
+}
+
+.columns {
+  width: 1/9%;
+}
+
+/* BREAKPOINT VARIABLES */
+$mobile: '400px';
+$phablet: '550px';
+$tablet: '750px';
+$desktop: '1000px';
+$large-desktop: '1200px';
+
+@media (min-width: $mobile) {
+
+}
+
+@media (min-width: $phablet) {
+
+}
+
+@media (min-width: $tablet) {
+
+}
+
+@media (min-width: $desktop) {
+
+}
+
+@media (min-width: $large-desktop) {
+
+}
