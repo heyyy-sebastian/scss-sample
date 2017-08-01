@@ -4,11 +4,11 @@
 
 /* GLOBAL STYLES */
 $fonts: Arial, sans-serif;
-$font-size: 1em;
+$font-size: 1;
 
 body {
   font-family: $fonts;
-  font-size: $font-size;
+  font-size: $font-size em;
 }
 
 .container {
@@ -19,14 +19,6 @@ body {
 
 .row {
   width: 100%;
-}
-
-.tile {
-  display: inline-block;
-}
-
-.columns {
-  width: 1/9%;
 }
 
 /* BREAKPOINT VARIABLES */
@@ -49,6 +41,16 @@ $large-desktop: '1200px';
 }
 
 @media (min-width: $desktop) {
+  .tile {
+  display: inline-block;
+  width: 30%;
+  margin: 1%;
+  padding: 5px;
+}
+
+.columns {
+  width: 1/9%;
+}
 
 }
 

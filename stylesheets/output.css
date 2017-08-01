@@ -46,9 +46,36 @@ table {
   border-spacing: 0; }
 
 /* GLOBAL STYLES */
+/* BREAKPOINT VARIABLES */
+@media (min-width: 400px) {
+  nav {
+    padding: 2em;
+    background-color: #1E88E5;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    -webkit-box-shadow: 0 0 1.5em 1em #a2c5ef;
+    -moz-box-shadow: 0 0 1.5em 1em #a2c5ef;
+    box-shadow: 0 0 1.5em 1em #a2c5ef; }
+    nav h1 {
+      font-size: 1.5em;
+      line-height: 125%;
+      padding: 1em 0; }
+    nav ul {
+      margin: 0 auto; }
+      nav ul li {
+        display: inline-block;
+        width: 30%; }
+        nav ul li a {
+          text-decoration: none;
+          color: #fff; }
+        nav ul li a:hover {
+          opacity: .8;
+          font-weight: normal; } }
+/* GLOBAL STYLES */
 body {
   font-family: Arial, sans-serif;
-  font-size: 1em; }
+  font-size: 1 em; }
 
 .container {
   width: 80%;
@@ -58,12 +85,15 @@ body {
 .row {
   width: 100%; }
 
-.tile {
-  display: inline-block; }
-
-.columns {
-  width: 1/9%; }
-
 /* BREAKPOINT VARIABLES */
+@media (min-width: 1000px) {
+  .tile {
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+    padding: 5px; }
+
+  .columns {
+    width: 1/9%; } }
 
 /*# sourceMappingURL=output.css.map */
