@@ -124,6 +124,7 @@ body {
 
 /* BREAKPOINTS for CONTENT */
 @media (min-width: 400px) {
+  /* layout styling */
   .container {
     margin: 0 auto;
     width: 85%; }
@@ -131,35 +132,65 @@ body {
   .row {
     display: block;
     padding: 1em; }
-    .row button {
-      text-align: center; }
 
   .container.row {
     width: inherit; }
 
   img {
     height: auto;
-    width: calc(100%); } }
+    width: calc(100%); }
+
+  /* Tiles styling */
+  .tile {
+    text-align: center;
+    margin: 0 0 1.5em;
+    vertical-align: top; }
+    .tile p {
+      margin: 0 0 .5em;
+      text-align: left; }
+
+  /* Button styling */
+  button {
+    text-align: center;
+    margin: .5em 0;
+    padding: 1em 3em;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #0D47A1;
+    border: none;
+    font-weight: bold; }
+
+  button:hover {
+    opacity: .7; } }
 @media (min-width: 550px) {
+  /* layout adjustments */
   .row {
-    padding: 2em; } }
+    padding: 2em; }
+
+  /* tile adjustments */
+  .tile {
+    width: 80%;
+    margin: 0 auto; }
+    .tile button {
+      margin-bottom: 1.5em; } }
 @media (min-width: 750px) {
+  /* layout adjustments */
   .container {
     width: 80%; }
 
   .row {
     padding: 1em 3em; } }
 @media (min-width: 1000px) {
+  /* layout adjustments */
   .row {
     padding: 1.5em 4em; }
 
   .tile {
-    vertical-align: top;
+    margin: 1em;
     display: inline-block;
-    width: 30%;
-    margin: .2em;
-    padding: .2em; } }
+    width: 28%; } }
 @media (min-width: 1200px) {
+  /* layout adjustments */
   .row {
     padding: 1.5em 5em; } }
 
