@@ -17,6 +17,7 @@ $tablet: '750px';
 $desktop: '1000px';
 $large-desktop: '1200px';
 
+/* mobile screen sizes */
 @media (min-width: $mobile) {
  nav {
   padding: 2em;
@@ -53,22 +54,26 @@ $large-desktop: '1200px';
   }
 
  }
+} //end mobile navbar styling
 
-
-}
-
-@media (min-width: $phablet) {
-
-}
 
 @media (min-width: $tablet) {
 
-}
+  nav {
+    padding: .5em;
+
+    > *{
+      width: 40%;
+      display: inline-block;
+      text-align: left;
+    }
+  }
+} //end tablet breakpoint
 
 @media (min-width: $desktop) {
-
-}
-
-@media (min-width: $large-desktop) {
-
+  nav {
+    ul{
+      text-align: right;
+    }
+  }
 }

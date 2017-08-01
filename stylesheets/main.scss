@@ -2,58 +2,76 @@
 @import 'nav';
 @import 'footer';
 
-/* GLOBAL STYLES */
-$fonts: Arial, sans-serif;
-$font-size: 1;
-
 body {
   font-family: $fonts;
-  font-size: $font-size em;
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 2em;
-}
 
-.row {
-  width: 100%;
-}
-
-/* BREAKPOINT VARIABLES */
-$mobile: '400px';
-$phablet: '550px';
-$tablet: '750px';
-$desktop: '1000px';
-$large-desktop: '1200px';
+/* BREAKPOINTS for CONTENT */
 
 @media (min-width: $mobile) {
+
+  .container {
+    margin: 0 auto;
+    width: 85%;
+  }
+
+  .row {
+    display: block;
+    padding: 1em;
+
+    button{
+      text-align: center;
+    }
+  }
+
+  .container.row {
+    width: inherit;
+  }
+
+  img {
+    height: auto;
+    width: calc(100%);
+  }
 
 }
 
 @media (min-width: $phablet) {
+  .row {
+  padding: 2em;
+  }
 
 }
 
 @media (min-width: $tablet) {
+  .container {
+    width: 80%;
+  }
+
+  .row {
+  padding: 1em 3em;
+  }
 
 }
 
 @media (min-width: $desktop) {
+  .row {
+  padding: 1.5em 4em;
+  }
+
   .tile {
+  vertical-align: top;
   display: inline-block;
   width: 30%;
-  margin: 1%;
-  padding: 5px;
-}
-
-.columns {
-  width: 1/9%;
-}
+  margin: .2em;
+  padding: .2em;
+  }
 
 }
 
 @media (min-width: $large-desktop) {
+  .row {
+  padding: 1.5em 5em;
+  }
 
 }

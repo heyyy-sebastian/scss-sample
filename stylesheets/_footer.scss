@@ -1,0 +1,56 @@
+/* FOOTER BREAKPOINTS */
+footer {
+  @extend nav;
+  @include navbar-shadow(none);
+}
+
+@media (min-width: $mobile) {
+  footer {
+    padding: 0;
+    text-align: left;
+
+    h2 {
+      font-size: $font-size*1.2em;
+      line-height: $header-line-height;
+    }
+
+    ul {
+      color: #d3d3d3;
+      font-weight: normal;
+
+      li{
+        width: 100%;
+        padding: .25em 0;
+
+        a:hover{
+        opacity: .8;
+        font-weight: bold;
+        }
+      }
+    }
+
+    .copyright {
+      background-color: #0D47A1;
+      width: 100%;
+    }
+
+    a {
+      text-decoration: none;
+      color: #d3d3d3;
+      }
+
+    a:hover {
+      opacity: .8;
+      font-weight: normal;
+      }
+    }
+} /* end mobile breakpoint */
+
+@media (min-width: $desktop) {
+  footer {
+    ul{
+      text-align: left;
+    }
+  }
+
+} /* end desktop breakpoint */
