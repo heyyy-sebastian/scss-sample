@@ -109,7 +109,7 @@ footer {
           font-weight: bold; }
     footer .copyright {
       background-color: #0D47A1;
-      width: 100%; }
+      width: inherit; }
     footer a {
       text-decoration: none;
       color: #d3d3d3; }
