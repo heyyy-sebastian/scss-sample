@@ -142,6 +142,9 @@ body {
     height: auto;
     width: calc(100%); }
 
+  a {
+    text-decoration: none; }
+
   /* Tiles styling */
   .tile {
     text-align: center;
@@ -194,7 +197,27 @@ body {
 
   .ad-unit {
     max-width: 100%;
-    height: 20em; } }
+    height: 20em; }
+
+  /* contact pg */
+  .contact-pg {
+    padding: 2em 0; }
+
+  form {
+    margin: 1.5em 0; }
+    form > * {
+      display: block;
+      margin: 1em 0; }
+    form textarea, form input {
+      min-height: 20em;
+      width: 100%;
+      padding: .5em; }
+    form input {
+      min-height: 2.5em; }
+    form a {
+      color: #d3d3d3; }
+    form a:hover {
+      color: #0D47A1; } }
 @media (min-width: 550px) {
   /* layout adjustments */
   .row {
@@ -212,7 +235,12 @@ body {
     width: 80%; }
 
   .row {
-    padding: 1em 3em; } }
+    padding: 1em 3em; }
+
+  /* contact form adjustments */
+  form input {
+    width: 47%;
+    display: inline-block; } }
 @media (min-width: 1000px) {
   /* layout adjustments */
   .row {
@@ -231,10 +259,21 @@ body {
 
   aside {
     float: right;
-    width: 30%; } }
+    width: 30%; }
+
+  /* contact form adjustments */
+  form textarea {
+    max-width: 60%; }
+  form input {
+    width: 25%;
+    display: block; } }
 @media (min-width: 1200px) {
   /* layout adjustments */
   .row {
-    padding: 1.5em 5em; } }
+    padding: 1.5em 5em; }
+
+  /* article pg adjustments */
+  article {
+    width: 62%; } }
 
 /*# sourceMappingURL=output.css.map */

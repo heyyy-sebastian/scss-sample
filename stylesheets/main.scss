@@ -29,6 +29,10 @@ body {
     width: calc(100%);
   }
 
+  a {
+    text-decoration: none;
+  }
+
 /* Tiles styling */
   .tile {
     text-align: center;
@@ -57,6 +61,7 @@ body {
   button:hover{
           opacity: .7;
         }
+
   /* article pg styling */
   .article-container {
     padding: 2em;
@@ -97,6 +102,40 @@ body {
     height: 20em;
   }
 
+  /* contact pg */
+  .contact-pg {
+    padding: 2em 0;
+  }
+
+  form{
+    margin: 1.5em 0;
+
+    >*{
+      display: block;
+      margin: 1em 0;
+    }
+
+    textarea, input {
+      min-height: 20em;
+      width: 100%;
+      padding: .5em;
+    }
+
+    input {
+      min-height: 2.5em;
+    }
+
+    a {
+      color: #d3d3d3;
+    }
+
+    a:hover {
+      color: #0D47A1;
+    }
+
+
+  }
+
 }
 
 @media (min-width: $phablet) {
@@ -128,6 +167,14 @@ body {
   padding: 1em 3em;
   }
 
+/* contact form adjustments */
+  form {
+    input{
+      width: 47%;
+      display: inline-block;
+    }
+  }
+
 }
 
 @media (min-width: $desktop) {
@@ -152,6 +199,18 @@ body {
   aside {
     float: right;
     width: 30%;
+  }
+
+  /* contact form adjustments */
+  form {
+    textarea{
+      max-width: 60%;
+    }
+
+    input{
+      width: 25%;
+      display: block;
+    }
   }
 
 }
