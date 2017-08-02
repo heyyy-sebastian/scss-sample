@@ -270,10 +270,6 @@ body {
 @media (min-width: 1200px) {
   /* layout adjustments */
   .row {
-    padding: 1.5em 5em; }
-
-  /* article pg adjustments */
-  article {
-    width: 62%; } }
+    padding: 1.5em 5em; } }
 
 /*# sourceMappingURL=output.css.map */
