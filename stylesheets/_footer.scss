@@ -5,14 +5,15 @@ footer {
 }
 
 @media (min-width: $mobile) {
+  h2 {
+      font-size: $font-size*1.2em;
+      line-height: $header-line-height;
+      font-weight: bold;
+    }
+
   footer {
     padding: 0;
     text-align: left;
-
-    h2 {
-      font-size: $font-size*1.2em;
-      line-height: $header-line-height;
-    }
 
     ul {
       color: #d3d3d3;
